@@ -1,25 +1,38 @@
-CrearBD ejemplo = nueva CrearBD();
+/*
+comentario de
+bloque
+
+con
+cambios
+*/
+
+-- comentario unilinea
+
+
+CrearDB ejemplo = nueva CrearDB();
 EliminarBD elimina = nueva EliminarBD();
 CrearColeccion colec = nueva CrearColeccion(“NombreColeccion”);
 EliminarColeccion eliminacolec = nueva EliminarColeccion(“NombreColeccion”);
+
 InsertarUnico insertadoc = nueva InsertarUnico(“NombreColeccion”,“
 {
-    "nombre":"Obra Literaria",
-    "autor":"Jorge Luis"
+"nombre":"Obra Literaria","autor":"Jorge Luis"
 }
 ”);
+
 ActualizarUnico actualizadoc = nueva ActualizarUnico(“NombreColeccion”, “
 {
-    "nombre": "Obra Literaria"
-},
-{
-    $set: {"autor": "Mario Vargas"}
+"$set": {"autor": "Mario Vargas"}
 }
 ”);
+
 EliminarUnico eliminadoc = nueva EliminarUnico(“NombreColeccion”, “
 {
-    "nombre": "Obra Literaria"
+"nombre": "Obra Literaria"
 }
 ”);
+
 BuscarTodo todo = nueva BuscarTodo (“NombreColeccion”);
+
 BuscarUnico todo = nueva BuscarUnico (“NombreColeccion”);
+

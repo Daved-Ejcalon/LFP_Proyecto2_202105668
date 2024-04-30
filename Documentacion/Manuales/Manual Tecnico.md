@@ -3,7 +3,7 @@
 
 # 📋 Indice
 1. [Información](#información)
-2. [Manual de Usuario](#manual-de-usuario)
+2. [Uso](#manual-de-usuario)
     1. [Requisitos](#requisitos)
     2. [Aplicación](#aplicación)
         1. [Entrada](#entrada)
@@ -21,7 +21,7 @@
 # Información
 Herramienta que permite el diseño de sentencias de base de datos no relacionales de MongoDB de una forma sencilla para el usuario, con la ayuda de un compilador que permite compilar archivos de entrada y visualizar el resultado de un entorno externo.
 
-# Manual de Usuario
+# Uso
 
 ## Requisitos
 - Python 3.8 o superior
@@ -55,24 +55,24 @@ La interfaz gráfica se encarga de mostrar al usuario una ventana con un editor 
 
 * **Editor de texto**: Se encarga de mostrar el código de entrada, se puede escribir o abrir un archivo de texto en formato .lfp
 
-![Editor de texto](./Images/ventana.png)
+![Editor de texto](./Imagenes/ventana.png)
 
 * **Menu archivo**: Se cuenta con varias opciones para el manejo de archivos, como abrir, guardar, guardar como y nuevo.
 
-![Menu archivo](./Images/archivo_menu.png)
-![Abrir archivo](./Images/entrada.png)
+![Menu archivo](./Imagenes/archivo_menu.png)
+![Abrir archivo](./Imagenes/entrada.png)
 
 * **Analizar**: Se encarga de analizar el código de entrada y mostrar los tokens y errores generados, mostrando el resultado en el área de texto inferior.
 
-![Analizar](./Images/analizar.png)
+![Analizar](./Imagenes/analizar.png)
 
 * **Tokens**: Se encarga de mostrar los tokens generados en el análisis del código de entrada.
 
-![Tokens](./Images/tokens.png)
+![Tokens](./Imagenes/tokens.png)
 
 * **Errores**: Se encarga de mostrar los errores generados en el análisis del código de entrada.
 
-![Errores](./Images/errores.png)
+![Errores](./Imagenes/errores.png)
 
 # Manual Técnico
 
@@ -85,11 +85,11 @@ Se utiliza el uso de estados para simular un autómata finito que permita recono
 
 ### Tabla de tokens
 
-![Tabla de tokens](./Images/tabla_tokens.png)
+![Tabla de tokens](./Imagenes/tabla_tokens.png)
 
 ### Autómata finito determinista
 
-![AFD](./Images/AFD.png)
+![AFD](./Imagenes/AFD.png)
 
 ### Gramática libre de contexto
 
