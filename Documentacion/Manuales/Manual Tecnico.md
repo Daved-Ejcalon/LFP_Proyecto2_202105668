@@ -55,24 +55,24 @@ La interfaz gráfica se encarga de mostrar al usuario una ventana con un editor 
 
 * **Editor de texto**: Se encarga de mostrar el código de entrada, se puede escribir o abrir un archivo de texto en formato .lfp
 
-![Editor de texto](./images/ventana.png)
+![Editor de texto](./Images/ventana.png)
 
 * **Menu archivo**: Se cuenta con varias opciones para el manejo de archivos, como abrir, guardar, guardar como y nuevo.
 
-![Menu archivo](./images/archivo_menu.png)
-![Abrir archivo](./images/entrada.png)
+![Menu archivo](./Images/archivo_menu.png)
+![Abrir archivo](./Images/entrada.png)
 
 * **Analizar**: Se encarga de analizar el código de entrada y mostrar los tokens y errores generados, mostrando el resultado en el área de texto inferior.
 
-![Analizar](./images/analizar.png)
+![Analizar](./Images/analizar.png)
 
 * **Tokens**: Se encarga de mostrar los tokens generados en el análisis del código de entrada.
 
-![Tokens](./images/tokens.png)
+![Tokens](./Images/tokens.png)
 
 * **Errores**: Se encarga de mostrar los errores generados en el análisis del código de entrada.
 
-![Errores](./images/errores.png)
+![Errores](./Images/errores.png)
 
 # Manual Técnico
 
@@ -85,11 +85,11 @@ Se utiliza el uso de estados para simular un autómata finito que permita recono
 
 ### Tabla de tokens
 
-![Tabla de tokens](./images/tabla_tokens.png)
+![Tabla de tokens](./Images/tabla_tokens.png)
 
 ### Autómata finito determinista
 
-![AFD](./images/AFD.png)
+![AFD](./Images/AFD.png)
 
 ### Gramática libre de contexto
 
