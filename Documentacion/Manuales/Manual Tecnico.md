@@ -239,4 +239,4 @@ getResultado(): Analiza la lista de lexemas para determinar qué función debe e
 
 El código utiliza una estructura de coincidencia (match) para determinar qué función debe ejecutarse según el primer lexema de la lista. Luego, instancia la clase correspondiente de la función y llama al método analizar() de esa clase para realizar el análisis. Finalmente, devuelve el resultado y la cantidad de lexemas utilizados en la operación.
 
-![Funcion](https://i.ibb.co/Cw4bp7y/Funcion.png)
+![Resultado] ()
