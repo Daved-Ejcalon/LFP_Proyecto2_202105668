@@ -2,7 +2,7 @@
 #### LENGUAJES FORMALES Y DE PROGRAMACIÓN, B+ 
 #### DAVED ABSHALON EJCALON CHONAY - 202105668
 
-### Requisitos
+### Requisitos minimos
 
 - **Sistema operativo:** Windows 10
 - **Procesador:** Intel Core 2 Duo E8200, AMD Phenom II X6 1075 a 3,0 GHz
