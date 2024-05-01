@@ -20,4 +20,4 @@ class Lexema(Expression):
         return self.tipo
     
     def __str__(self) -> str:
-        return f'{self.lexema}'
+        return f'{self.lexema}' 

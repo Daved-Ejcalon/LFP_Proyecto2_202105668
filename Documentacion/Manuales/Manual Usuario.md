@@ -1,9 +1,8 @@
-﻿# PROYECTO 2
-## MANUAL DE USUARIO
+﻿## MANUAL DE USUARIO
 #### LENGUAJES FORMALES Y DE PROGRAMACIÓN, B+ 
 #### DAVED ABSHALON EJCALON CHONAY - 202105668
 
-## REQUISITOS
+### Requisitos
 
 - **Sistema operativo:** Windows 10
 - **Procesador:** Intel Core 2 Duo E8200, AMD Phenom II X6 1075 a 3,0 GHz
@@ -13,11 +12,13 @@
 - **Internet:** Acceso a internet, con cualquier explorador web
 - **Visual Studio:** Con Python instalado
 
-## PANTALLA INICIAL
+### Inicio
 
 Para poder utilizar el programa, el usuario deberá iniciar el programa en el IDE Visual Studio Code. Al iniciar el programa, se desplegará un cuadro de diálogo donde se mostrarán las opciones principales del programa.
 
 Entre las opciones del programa están "Archivo", "Analizar", "Tokens" y "Errores". En la primera opción llamada "Archivo" están las siguientes sub-opciones para el funcionamiento:
+
+![Inicio](https://ibb.co/album/qkKPwC)
 
 ### Menú Archivo
 
@@ -31,10 +32,13 @@ Entre las opciones del programa están "Archivo", "Analizar", "Tokens" y "Errore
 
 5. **Salir:** Con esta opción se cierra la aplicación.
 
+![Menu Archivo](https://ibb.co/album/qkKPwC)
 
 ### Menú Análisis
 
 Generar sentencias MongoDB: Esta opción analizará léxica y sintácticamente el contenido que este en el área de código, si existieran errores se mostraran TODOS los errores encontrados tanto léxicos como sintácticos que se encontraron, estos errores se mostrarán en el área de errores. De no existir errores se debe crear y mostrar las sentencias finales que estarán en sintaxis para MongoDB.
+
+![Menu Analisis](https://ibb.co/album/qkKPwC)
 
 ### Menu Tokens
 
@@ -45,6 +49,8 @@ Mostrará una tabla en la cual estarán listados todos los tokens que se reconoc
 3. **Número de Token**
 4. **Lexema**
 
+![Menu Tokens](https://ibb.co/album/qkKPwC)
+
 ### Área de Errores
 
 El área de errores está conformada por una tabla en la que se cargarán tanto los errores léxicos como los errores sintácticos después de compilar algún archivo. Para los errores se deben mostrar las siguientes características:
@@ -54,6 +60,7 @@ El área de errores está conformada por una tabla en la que se cargarán tanto 
 3. **Posición del error** Columna.
 4. **Descripción:** Que token o componente lexico se espero.
 
+![Area de Errores](https://ibb.co/album/qkKPwC)
 
 ## Utilización del programa
 
