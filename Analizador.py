@@ -35,9 +35,14 @@ def intruccion(cadena):
 
             while len(cadena) and char != '\n':
                 n_linea += 1
+
                 cadena = cadena[1:]
                 char = cadena[0]
             
+                if len(cadena) == 1:
+                    cadena = ''
+                    break
+
             n_columna = 1
             cadena = cadena[2:]
             continue
@@ -46,9 +51,15 @@ def intruccion(cadena):
 
             while len(cadena) and  charComentario != '*/':
                 n_linea += 1
+
+
                 cadena = cadena[1:]
                 charComentario = cadena[:2]
             
+                if len(cadena) == 2:
+                    cadena = ''
+                    break
+
             n_columna = 1
             cadena = cadena[2:]
             continue
@@ -139,7 +150,7 @@ def intruccion(cadena):
                 lexema, cadena = armar_lexema(cadena)
                 if lexema and cadena: # Si lexema y cadena no son nulos
                     
-                    if lexema.lower() != "nueva":
+                    if lexema.lower() not in ['nueva', 'new']:
                         lista_errores.append(Errores(char,"Lexico","Se esperaba la palabra \"nueva\"", n_linea, n_columna))
                         n_columna += 1
                     else:

@@ -233,14 +233,13 @@ class Window(QMainWindow):
         data = data.replace("\\r", "\r")
         data = data.replace("\\t", "\t")
 
-
         try:
             resetAnalizador()
-            lista_lexs = []
+            #lista_lexs = []
 
             # analizar archivo
             instrucciones = intruccion(data) # Asigna instrucciones con la lista de lexemas
-            lista_lexs = copy.deepcopy(instrucciones)
+            #lista_lexs = copy.deepcopy(instrucciones)
 
             resultado_instrucciones = analizar()
 

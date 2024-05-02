@@ -52,7 +52,7 @@ class CrearDB(Funcion):
         if igual != '=':
             self.lista_errores.append(Errores(funcion,"Semántico", "Falta el signo igual", fila, columna))
             return None, self.recuperacionError(self.lista_lexemas)
-        if nueva != 'nueva':
+        if nueva not in ['nueva', 'new']:
             self.lista_errores.append(Errores(funcion,"Semántico", "Falta la palabra nueva", fila, columna))
             return None, self.recuperacionError(self.lista_lexemas)
         if funcion2 != funcion:
@@ -98,7 +98,7 @@ class EliminarBD(Funcion):
         if igual != '=':
             self.lista_errores.append(Errores(funcion,"Semántico", "Falta el signo igual", fila, columna))
             return None, self.recuperacionError(self.lista_lexemas)
-        if nueva != 'nueva':
+        if nueva not in ['nueva', 'new']:
             self.lista_errores.append(Errores(funcion,"Semántico", "Falta la palabra nueva", fila, columna))
             return None, self.recuperacionError(self.lista_lexemas)
         if funcion2 != funcion:
@@ -142,7 +142,7 @@ class CrearColeccion(Funcion):
         if igual != '=':
             self.lista_errores.append(Errores(funcion,"Semántico", "Falta el signo igual", fila, columna))
             return None, self.recuperacionError(self.lista_lexemas)
-        if nueva != 'nueva':
+        if nueva not in ['nueva', 'new']:
             self.lista_errores.append(Errores(funcion,"Semántico", "Falta la palabra nueva", fila, columna))
             return None, self.recuperacionError(self.lista_lexemas)
         if funcion2 != funcion:
@@ -193,7 +193,7 @@ class EliminarColeccion(Funcion):
         if igual != '=':
             self.lista_errores.append(Errores(funcion,"Semántico", "Falta el signo igual", fila, columna))
             return None, self.recuperacionError(self.lista_lexemas)
-        if nueva != 'nueva':
+        if nueva not in ['nueva', 'new']:
             self.lista_errores.append(Errores(funcion,"Semántico", "Falta la palabra nueva", fila, columna))
             return None, self.recuperacionError(self.lista_lexemas)
         if funcion2 != funcion:
@@ -245,7 +245,7 @@ class InsertarUnico(Funcion):
         if igual != '=':
             self.lista_errores.append(Errores(funcion,"Semántico", "Falta el signo igual", fila, columna))
             return None, self.recuperacionError(self.lista_lexemas)
-        if nueva != 'nueva':
+        if nueva not in ['nueva', 'new']:
             self.lista_errores.append(Errores(funcion,"Semántico", "Falta la palabra nueva", fila, columna))
             return None, self.recuperacionError(self.lista_lexemas)
         if funcion2 != funcion:
@@ -301,7 +301,7 @@ class ActualizarUnico(Funcion):
         if igual != '=':
             self.lista_errores.append(Errores(funcion,"Semántico", "Falta el signo igual", fila, columna))
             return None, self.recuperacionError(self.lista_lexemas)
-        if nueva != 'nueva':
+        if nueva not in ['nueva', 'new']:
             self.lista_errores.append(Errores(funcion,"Semántico", "Falta la palabra nueva", fila, columna))
             return None, self.recuperacionError(self.lista_lexemas)
         if funcion2 != funcion:
@@ -357,7 +357,7 @@ class EliminarUnico(Funcion):
         if igual != '=':
             self.lista_errores.append(Errores(funcion,"Semántico", "Falta el signo igual", fila, columna))
             return None, self.recuperacionError(self.lista_lexemas)
-        if nueva != 'nueva':
+        if nueva not in ['nueva', 'new']:
             self.lista_errores.append(Errores(funcion,"Semántico", "Falta la palabra nueva", fila, columna))
             return None, self.recuperacionError(self.lista_lexemas)
         if funcion2 != funcion:
@@ -412,7 +412,7 @@ class BuscarTodo(Funcion):
         if igual != '=':
             self.lista_errores.append(Errores(funcion,"Semántico", "Falta el signo igual", fila, columna))
             return None, self.recuperacionError(self.lista_lexemas)
-        if nueva != 'nueva':
+        if nueva not in ['nueva', 'new']:
             self.lista_errores.append(Errores(funcion,"Semántico", "Falta la palabra nueva", fila, columna))
             return None, self.recuperacionError(self.lista_lexemas)
         if funcion2 != funcion:
@@ -462,7 +462,7 @@ class BuscarUnico(Funcion):
         if igual != '=':
             self.lista_errores.append(Errores(funcion,"Semántico", "Falta el signo igual", fila, columna))
             return None, self.recuperacionError(self.lista_lexemas)
-        if nueva != 'nueva':
+        if nueva not in ['nueva', 'new']:
             self.lista_errores.append(Errores(funcion,"Semántico", "Falta la palabra nueva", fila, columna))
             return None, self.recuperacionError(self.lista_lexemas) 
         if funcion2 != funcion:

@@ -1,38 +1,50 @@
-/*
-comentario de
-bloque
-
-con
-cambios
+CrearDB DBEjemplo = nueva CrearDB();
+EliminarBD DBEjemplo = nueva EliminarBD();
+CrearDB Futbol = nueva CrearDB();
+CrearColeccion colec = nueva CrearColeccion(“Calificacion”);
+EliminarColeccion eliminacolec = nueva EliminarColeccion(“Calificacion”);
+CrearColeccion colec = nueva CrearColeccion(“Futbolistas”);
+InsertarUnico insertaFutbolista = nueva InsertarUnico(“Futbolistas”,“
+{
+        "nombre":"Lionel Messi",
+        "club":"Paris Saint-Germain"
+}
+”);
+/* 
+	Es que Haaland es muy bueno también, pero bueno, centrémonos en LFP :D
 */
-
--- comentario unilinea
-
-
-CrearDB ejemplo = nueva CrearDB();
-EliminarBD elimina = nueva EliminarBD();
-CrearColeccion colec = nueva CrearColeccion(“NombreColeccion”);
-EliminarColeccion eliminacolec = nueva EliminarColeccion(“NombreColeccion”);
-
-InsertarUnico insertadoc = nueva InsertarUnico(“NombreColeccion”,“
+BuscarTodo todoFutbolistas = nueva BuscarTodo (“Futbolistas”);
+BuscarUnico todoFutbolistas = nueva BuscarUnico (“Futbolistas”);
+InsertarUnico insertaFutbolista = nueva InsertarUnico(“Futbolistas”,“
 {
-"nombre":"Obra Literaria","autor":"Jorge Luis"
+        "nombre":"Erling Haaland",
+        "club":"Manchester City"
 }
 ”);
-
-ActualizarUnico actualizadoc = nueva ActualizarUnico(“NombreColeccion”, “
+ActualizarUnico actualizadoc = nueva ActualizarUnico(“Futbolistas”, “
 {
-"$set": {"autor": "Mario Vargas"}
+"$set": {"club": "Inter Miami"}
 }
 ”);
-
-EliminarUnico eliminadoc = nueva EliminarUnico(“NombreColeccion”, “
+BuscarTodo todoFutbolistas = nueva BuscarTodo (“Futbolistas”);
+BuscarUnico todoFutbolistas = nueva BuscarUnico (“Futbolistas”);
+EliminarUnico eliminaFutbolistas = nueva EliminarUnico(“Futbolistas”, “
 {
-"nombre": "Obra Literaria"
+"nombre": "Lionel Messi"
 }
 ”);
-
-BuscarTodo todo = nueva BuscarTodo (“NombreColeccion”);
-
-BuscarUnico todo = nueva BuscarUnico (“NombreColeccion”);
-
+BuscarTodo todoFutbolistas = nueva BuscarTodo (“Futbolistas”);
+BuscarUnico todoFutbolistas = nueva BuscarUnico (“Futbolistas”);
+/* 
+	Eliminamos a Haaland para verificar el flujo de información
+*/
+EliminarUnico eliminadoc = nueva EliminarUnico(“Futbolistas”, “
+{
+"nombre": "Erling Haaland"
+}
+”);
+/* 
+	No debería de haber nada en la colección
+*/
+BuscarTodo todoFutbolistas = nueva BuscarTodo (“Futbolistas”);
+BuscarUnico todoFutbolistas = nueva BuscarUnico (“Futbolistas”);
